@@ -34,7 +34,7 @@ def earliest_ancestor(ancestors, starting_node):
             family_tree[relation[1]] = [relation[0]]
     # For the example above ancestors should look like
     # {3:[1, 2], 6:[5, 3], 7:[5], 5:[4], 8:[4, 11], 9:[8], 1:[10]}
-    print(family_tree)
+    # print(family_tree)
 
     # iterate through our graph to find the parent who has child starting_node
     if starting_node in family_tree:
@@ -52,7 +52,4 @@ def earliest_ancestor(ancestors, starting_node):
                 if item[0] < most_old[0]:
                     most_old = item
     return most_old[0]
-
-    
-
     
